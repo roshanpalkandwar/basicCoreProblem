@@ -7,17 +7,17 @@ namespace basicCoreJavaProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welecome to basic java core program");
-            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two\n4.harmonic series\n5.the prime factor\n6.check even & odd number");
-            double opt=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two\n4.harmonic series\n5.the prime factor\n6.check even & odd number\n7.Quotient and Remainder");
+            double opt = Convert.ToDouble(Console.ReadLine());
 
-           
+
 
             switch (opt)
             {
                 case 1:
                     flipCoin.calculatePercentage();
                     break;
-                    case 2:
+                case 2:
                     leapYear.leapYear1();
                     break;
                 case 3:
@@ -27,11 +27,16 @@ namespace basicCoreJavaProgram
                     HarmonicPoblem.harmonic();
                     break;
                 case 5:
-                    
+
                     prime_factor p1 = new prime_factor();
                     p1.PrimeFactors();
                     break;
-                    case 6 :  evenOddNumber.number();
+                case 6:
+                    evenOddNumber.number();
+                    break;
+                    case 7:
+
+                    QuotientAndRemainder.Calculate();
                     break;
             }
         }
