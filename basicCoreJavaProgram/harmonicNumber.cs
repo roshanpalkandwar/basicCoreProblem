@@ -14,8 +14,8 @@ namespace basicCoreJavaProgram
         public static void harmonic()
         {
             Console.WriteLine("enter the number for lentgh of series");
-            int num=Convert.ToInt32(Convert.ToDouble(Console.ReadLine()));
-            int i = 1;
+            double num=Convert.ToInt32(Convert.ToDouble(Console.ReadLine()));
+            double i = 1;
             double rst = 0.0;
             num = num;
             while(i<=num)
