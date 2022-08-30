@@ -7,7 +7,7 @@ namespace basicCoreJavaProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welecome to basic java core program");
-            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two\n4.harmonic series\n5.the prime factor\n6.check even & odd number\n7.Quotient and Remainder");
+            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two\n4.harmonic series\n5.the prime factor\n6.check even & odd number\n7.Quotient and Remainder\n8.swap number");
             double opt = Convert.ToDouble(Console.ReadLine());
 
 
@@ -37,6 +37,9 @@ namespace basicCoreJavaProgram
                     case 7:
 
                     QuotientAndRemainder.Calculate();
+                    break;
+                case 8:
+                    swap.swapNumber();
                     break;
             }
         }
