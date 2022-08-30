@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("welecome to basic java core program");
-            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not");
+            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two");
             int opt=Convert.ToInt32(Console.ReadLine());
 
             switch(opt)
@@ -15,6 +15,9 @@
                     break;
                     case 2:
                     leapYear.leapYear1();
+                    break;
+                case 3:
+                    PowerOfTwo.tableOf2();
                     break;
             }
         }
