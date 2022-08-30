@@ -1,14 +1,18 @@
-﻿namespace basicCoreJavaProgram
+﻿using System;
+
+namespace basicCoreJavaProgram
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("welecome to basic java core program");
-            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two");
-            int opt=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("chooes option\n1. flip coin\n2.leap year or not\n3.power of two\n4.harmonic series");
+            double opt=Convert.ToDouble(Console.ReadLine());
 
-            switch(opt)
+           
+
+            switch (opt)
             {
                 case 1:
                     flipCoin.calculatePercentage();
@@ -18,6 +22,9 @@
                     break;
                 case 3:
                     PowerOfTwo.tableOf2();
+                    break;
+                case 4:
+                    HarmonicPoblem.harmonic();
                     break;
             }
         }
